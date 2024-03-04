@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6, strong{
+    color: black;
+}
+
+p{
+    font-size: 1rem; 
+    line-height: 1.9rem;
+}
+
+p, span, label, input, textarea, li{
+    color: gray;
+}
+
+a{
+    text-decoration: none;
+}
+
+.main-container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width:1200px){
+    .main-container{
+        width: 90%;
+    }
+}
+
+.btn{
+    padding: 1rem 1.5rem;
+    background: whitesmoke;
+    border: 1.5px solid sandybrown;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.btn:hover{
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+
+/* Titles */
+.pre-title{
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    color: grey;
+    position: relative;
+    padding-left: 40px;
+    font-weight: 400;
+    font-size: .9rem;
+}
+
+.pre-title::before{
+    content: "";
+    width: 30px;
+    height: 1px;
+    background-color: antiquewhite;
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 50%;
+}
+
+/* logo and Nav menu */
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}   
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.logo a{
+    color: indigo;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a{
+    color: brown;
+}
+
+/* burger */
+.burger div{
+    width: 25px;
+    height: 2px;
+    background-color: black;
+    margin: 7px;
+    transition: all 0.3s;
+    z-index: 99;
+}
+
+.burger {
+    display: none;
+    z-index: 99;
+    position: fixed;
+    top: 33px;
+    right: 35px;
+}
+
+/* Hero Sec */
+#hero {
+    height: 720px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.hero-name{
+    font-size: 3rem;
+    font-weight: 700;
+    margin: .5rem 0 1rem;
+}
+
+.hero-name span{
+    color: midnightblue;
+}
+
+.hero-right img{
+    width: 90%;
+}
+
+.hero-right{
+    display: flex;
+    justify-content: center;
+}
