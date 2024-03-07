@@ -10,7 +10,7 @@ body{
     font-family: 'Roboto', 'Arial Narrow', Arial, sans-serif;
 }
 
-h1,h2,h3,h4,h5,h6, strong{
+h1,h2,h3,h4,h5,h6,strong{
     color: black;
 }
 
@@ -51,12 +51,18 @@ a{
 }
 
 /* Titles */
+.section-title{
+    margin: 1rem 0 4rem;
+    font-size: 2rem;
+}
+
 .pre-title{
     text-transform: uppercase;
     letter-spacing: .5rem;
     color: grey;
     position: relative;
     padding-left: 40px;
+    width: fit-content;
     font-weight: 400;
     font-size: .9rem;
 }
@@ -70,6 +76,13 @@ a{
     display: block;
     left: 0;
     top: 50%;
+}
+
+/* layout */
+.grid3{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
 }
 
 /* logo and Nav menu */
@@ -149,4 +162,44 @@ nav ul li a{
 .hero-right{
     display: flex;
     justify-content: center;
+}
+
+/* Service section */
+#services {
+    background-color: #fbfbfb;
+    padding: 6rem 0;
+}
+
+.services .pre-title{
+    margin: 0 auto;
+}
+
+.services-title {
+    text-align: center;
+}
+
+.service{
+    padding: 3rem 2rem;
+    text-align: center;
+    background-color: white;
+    border-radius: white;
+
+}
+
+.service h4{
+    margin: 1.5rem 0;
+    font-weight: 500;
+    font-size: 1.05rem;
+}
+
+.service-icon{
+    background-color: black;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 1rem 1.3rem;
+    border-radius: 0.5rem;
+}
+
+.service-icon svg{
+    fill: white;
 }
